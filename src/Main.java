@@ -7,6 +7,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task1_2_3();
+        task4_5();
+        task8();
     }
     public static void task1(){
         byte b = 1;
@@ -26,6 +29,7 @@ public class Main {
         float secondBoxerWeight = 82.7f;
         System.out.println("Общий вес боксеров "+ (secondBoxerWeight + firstBoxerWeight) +" кг");
         System.out.println("Разница в весе боксеров "+ Math.abs(secondBoxerWeight - firstBoxerWeight) +" кг");
+        System.out.println("Разница в весе боксеров вычисленная через остаток от деления "+ Math.abs(secondBoxerWeight%firstBoxerWeight) +" кг");
     }
     public static void task3() {
         byte babanWeight = 80;
@@ -70,5 +74,55 @@ public class Main {
                 (newDenisIncome*12-denisIncome*12)+" рублей");
         System.out.println("Кристина теперь получает " +newchristinasIncome + " рублей, годовой доход вырос на " +
                 (newchristinasIncome*12-christinasIncome*12)+" рублей");
+    }
+
+    public static void task1_2_3() {
+        var dog = 8;
+        var cat = 3.6;
+        var paper = 763789;
+        System.out.println("Dog = "+ dog+ " cat = " + cat +" Paper = " + paper);
+
+        dog +=4;
+        cat +=4;
+        paper+=4;
+        System.out.println("Dog = "+ dog+ " cat = " + cat +" Paper = " + paper);
+
+        dog -=3.5;
+        cat -= 1.6;
+        paper -=7639;
+        System.out.println("Dog = "+ dog+ " cat = " + cat +" Paper = " + paper);
+
+
+    }
+    public static void task4_5() {
+        var friend = 19;
+        System.out.println(friend);
+        friend +=2;
+        System.out.println(friend);
+        friend /=7;
+        System.out.println(friend);
+
+        var frog = 3.5;
+        System.out.println(frog);
+        frog *= 10;
+        System.out.println(frog);
+        frog /= 3.5;
+        System.out.println(frog);
+        frog += 4;
+        System.out.println(frog);
+
+    }
+
+    public static void task8() {
+        var totalHours = 640;
+        var hoursPerPerson = 8;
+        var totalPersons = totalHours/hoursPerPerson;
+        System.out.println("Всего работников " + totalPersons);
+
+        var newTotalPersons =totalPersons+94;
+        var newTotalHours = newTotalPersons*hoursPerPerson;
+
+        System.out.println("Если в компании работает "+ newTotalPersons+ " человек, то всего " +newTotalHours + " часов работы может быть поделено между сотрудниками");
+
     }
 }
